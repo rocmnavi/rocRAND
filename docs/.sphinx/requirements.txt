@@ -46,6 +46,10 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
+importlib-metadata==7.0.1
+    # via sphinx
+importlib-resources==6.1.1
+    # via rocm-docs-core
 jinja2==3.1.2
     # via
     #   myst-parser
@@ -63,8 +67,10 @@ mdit-py-plugins==0.3.5
 mdurl==0.1.2
     # via markdown-it-py
 myst-parser[linkify]==1.0.0
-    # via rocm-docs-core
-numpy==1.24.3
+    # via
+    #   myst-parser
+    #   rocm-docs-core
+numpy==1.24.4
     # via -r requirements.in
 packaging==23.1
     # via
@@ -84,9 +90,13 @@ pygments==2.15.1
     #   pydata-sphinx-theme
     #   sphinx
 pyjwt[crypto]==2.6.0
-    # via pygithub
+    # via
+    #   pygithub
+    #   pyjwt
 pynacl==1.5.0
     # via pygithub
+pytz==2023.3.post1
+    # via babel
 pyyaml==6.0
     # via
     #   myst-parser
@@ -145,3 +155,7 @@ urllib3==1.26.15
     # via requests
 wrapt==1.15.0
     # via deprecated
+zipp==3.17.0
+    # via
+    #   importlib-metadata
+    #   importlib-resources
